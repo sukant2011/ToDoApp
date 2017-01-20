@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+      <head>
+	  <title>Todo-App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		 <link rel="stylesheet" href="/css/datepicker.css">
+	  <script src="/js/angular.min.js"></script>
+	  <script src="/js/angular-route.min.js"></script>
+	  <script src="/js/module/myapp.js"></script>
+		 <script src="/js/controller/taskController.js"></script>
+  <script src="/js/service/taskService/createTask.js"></script>
+		  <script src="/js/bootstrap-datepicker.js"></script>
+	
+	  </head>
+	  <body ng-app="myApp">
+		<header>
+      <div ng-include="'/js/views/partials/header.html'">
+    </div>
+		</header>
+    <main>
+   <ng-view></ng-view>
+		</main>
+	  <footer>
+      <div ng-include="'/js/views/partials/footer.html' ">
+    </footer>
+      </body>
+	  </html>
+		 

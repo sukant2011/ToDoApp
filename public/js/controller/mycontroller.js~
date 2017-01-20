@@ -1,0 +1,42 @@
+ app.controller('loginController',['$scope','loginService', function ($scope,loginService) {
+$scope.logOut=true; 
+ $scope.userData=function(){
+	   $scope.logOut=false; 
+	  loginService.validUser($scope.email,$scope.pass);
+	 
+ }
+  }]);
+  
+ //*******************ViewLoginController*******************************
+
+app.controller('viewController',['$scope','loginService','createUser', function ($scope,loginService,createUser) {
+	$scope.logOut=true; 
+	$scope.logOutUser=function(){
+	loginService.logout();	 
+	}
+	$scope.clickCreateUser=false;
+	$scope.contacts=createUser.list();
+ 
+	$scope.addUser=function(){
+	createUser.saveData($scope.newContact)
+	$scope.clickCreateUser=true;
+        $scope.newContact={};
+
+	}
+
+   $scope.deletName=function(id){
+   createUser.deletedata(id);
+if($scope.newContact.id == id){
+$scope.newContact={};
+}
+}
+$scope.$watch('deletName',function(){
+   console.log("inside the delete");
+	});
+
+ $scope.edit=function(id){
+       $scope.newContact= angular.copy(createUser.getData(id));
+     }	
+    }]);
+
+

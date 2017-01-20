@@ -1,0 +1,16 @@
+{
+  "name": "mangal",
+  "description": "mangal",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}

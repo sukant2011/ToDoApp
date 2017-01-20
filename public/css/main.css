@@ -1,0 +1,287 @@
+table tr td {
+     padding: 10pxs;
+}
+table tr th {
+     padding: 20px;
+}
+#spinner {
+    display: block;
+}
+#logout {
+    top: 0;
+}
+.spinner {
+    height: 102px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    overflow: auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    width: 100px;
+    z-index: 1234;
+}
+body, html, p {
+    margin: 0;
+    padding: 0;
+}
+:focus {
+    outline: medium none;
+}
+body {
+    background-color: rgb(244, 244, 244);
+    color: rgb(54, 54, 54);
+    font: 17px/19px "Helvetica Neue",helvetica,arial,sans-serif;
+}
+a {
+    color: rgb(136, 136, 136);
+    text-decoration: underline;
+}
+a:hover {
+    color: rgb(51, 51, 51);
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.main-view {
+    margin: 0 auto;
+    padding: 80px 0 0;
+    width: 480px;
+}
+
+.main-view-content {
+    background: rgb(174, 174, 174) url("../images/header.png") no-repeat scroll left top;
+    border: 10px solid rgb(1, 153, 52);
+    box-shadow: 0 0 15px rgb(136, 136, 136);
+    box-sizing: border-box;
+    min-height: 450px;
+    padding-top: 110px;
+    position: relative;
+    width: 480px;
+}
+header, footer, .content {
+    margin: 0 auto;
+    width: 480px;
+}
+header {
+    height: 50px;
+}
+header div {
+    height: 50px;
+    position: relative;
+    top: 0;
+}
+header div p#greetings {
+    bottom: 4px;
+    left: 40px;
+    position: absolute;
+}
+header div p.main-button {
+    bottom: -5px;
+    position: absolute;
+    right: -35px;
+}
+header div p.session-user {
+    bottom: 3px;
+    font-size: 14px;
+    left: 10px;
+    position: absolute;
+}
+footer {
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    line-height: 21px;
+    padding-top: 12px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+footer p.minor {
+    font-size: 13px;
+}
+form {
+    -moz-box-align: stretch;
+    -moz-box-orient: vertical;
+    display: -moz-box;
+    padding: 20px;
+}
+form label {
+    -moz-box-align: center;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: start;
+    display: -moz-box;
+    padding: 10px 0;
+}
+form span {
+    width: 100px;
+}
+form input {
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 10px 15px rgb(238, 238, 238) inset;
+    box-sizing: border-box;
+    color: rgb(0, 0, 170);
+    font-size: 14px;
+    height: 35px;
+    padding: 5px 20px 5px 10px;
+    width: 270px;
+}
+form input:focus {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border: 2px solid rgb(85, 85, 85);
+    box-shadow: 0 0 3px rgb(170, 170, 170);
+}
+form input:focus:invalid {
+    background: rgb(255, 255, 255) url("../images/invalid.png") no-repeat scroll 98% center !important;
+    border-color: rgb(255, 51, 102);
+}
+form input:required:valid {
+    background: rgb(255, 255, 255) url("../images/valid.png") no-repeat scroll 98% center;
+}
+form div.formFooter {
+    -moz-box-align: center;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: start;
+    display: -moz-box;
+    margin-top: 10px;
+}
+form button.main-button[type="submit"] {
+    margin: 10px 20px 0 100px;
+}
+form button.login[type="submit"] {
+    float: right;
+    margin: 10px 30px 0 100px;
+}
+form p.bDelete, form p.bCancel {
+    color: rgb(136, 136, 136);
+    text-decoration: underline;
+}
+form p.bDelete:hover, form p.bCancel:hover {
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+legend {
+    display: none;
+}
+fieldset {
+    border: medium none;
+}
+div.login {
+    background: rgb(174, 174, 174) url("../images/brushed_alu2.png") repeat scroll left top;
+    display: block;
+    height: 300px;
+    /*overflow: hidden;*/
+}
+#login-form {
+    margin-top: 10px;
+}
+#login-form p {
+    color: red;
+    font-size: 13px;
+    padding-left: 100px;
+    padding-top: 0;
+}
+
+
+element.style {
+    margin-left: 159px;
+}
+.main-button {
+    background-color: rgb(1, 153, 52);
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(136, 136, 136);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    float: inherit;
+    font-size: 17px;
+    margin-right: 38px;
+    padding: 6px 0;
+    text-align: center;
+    transition: border-color 0.5s linear 0s;
+    width: 76px;
+}
+.logout {
+    background-color: rgb(153, 0, 0);
+}
+.main-button:hover {
+    background-color: rgb(144, 188, 234);
+    border-color: rgb(54, 54, 54);
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+div.employee-edit {
+    background: rgb(244, 244, 244) url("../images/bg.png") repeat scroll left top;
+}
+
+.employee-edit form {
+    background: rgb(244, 244, 244) url("../images/bg.png") repeat scroll left top;
+    height: 270px;
+    margin-top: -45px;
+    width: 91%;
+}
+.disabledButton {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , rgb(255, 255, 255), rgb(244, 244, 244)) repeat scroll 0 0;
+    border: 1px solid rgb(54, 54, 54);
+    box-sizing: border-box;
+    color: rgb(54, 54, 54);
+    display: block;
+    font-size: 15px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+}
+.subButton {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , rgb(255, 255, 255), rgb(244, 244, 244)) repeat scroll 0 0;
+    border: 1px solid rgb(54, 54, 54);
+    box-sizing: border-box;
+    color: rgb(54, 54, 54);
+    display: block;
+    font-size: 15px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+}
+.subButton:hover {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , rgb(184, 225, 252) 0%, rgb(169, 210, 243) 10%, rgb(144, 186, 228) 25%, rgb(144, 188, 234) 37%, rgb(144, 191, 240) 50%, rgb(107, 168, 229) 51%, rgb(162, 218, 245) 83%, rgb(189, 243, 253) 100%) repeat scroll 0 0;
+    cursor: pointer;
+    opacity: 0.85;
+}
+#employee-list-container {
+    background: rgb(244, 244, 244) url("../images/bg.png") repeat scroll left top;
+    height: 261px;
+    overflow-y: auto;
+}
+#employee-list {
+    width: 100%;
+}
+
+#employee-list li {
+    display: inline-flex;
+    padding: 18px 75px;
+    transition: background-color 0.5s linear 0s;
+}
+#employee-list li:hover {
+    background-color: rgb(209, 168, 142);
+    color: rgb(255, 255, 255);
+}
+
+#sub-nav {
+    -moz-box-align: center;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: start;
+    background: rgb(174, 174, 174) url("../images/brushed_alu2.png") repeat scroll left top;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    box-shadow: 0 0 15px rgb(136, 136, 136);
+    display: -moz-box;
+    height: 60px;
+    width: 100%;
+}
+#sub-nav li {
+    padding-left: 30px;
+}
+.stack > *:not(.active) {
+  display: none;
+}

@@ -1,0 +1,50 @@
+app.service('createUser',function(){
+var uid=1;
+var d = new Date();
+ var dateString = d.getMonth() + 1 + "/" + d.getDate() + "/" + d.getFullYear().toString().substr(2,2);
+console.log(dateString);
+      					
+	var userInfo=[{
+		id: 0,
+		name: 'John',
+		lastName: 'baba',
+		email: 'admin123',
+		startDate: dateString
+	
+	}];
+	
+	this.saveData=function(da){
+		if(userInfo.id == null){
+		da.id = uid++;
+        //console.log(data.id);
+		userInfo.push(da)
+		}
+	
+	else{
+	for(i in userInfo){
+		if(userInfo[i].id == da.id){
+                 userInfo[i] =da;
+                     }
+		}
+	   }
+}
+       
+this.list=function(){
+		return userInfo;
+		//console.log(userInfo)
+	       }
+
+this.deletedata=function(){
+            for(i in userInfo){
+      userInfo.pop(i);
+
+               }
+             }
+this.getData=function(id){
+            for(i in userInfo){
+             if(userInfo[i].id == id){
+               return userInfo[i];
+              }
+            }
+        }
+});

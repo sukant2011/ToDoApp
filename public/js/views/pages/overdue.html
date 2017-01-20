@@ -1,0 +1,17 @@
+<div class="container">
+<h2>Overdue Tasks</h2>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Due date</th>
+    <th>Priority</th>
+  </tr>
+  <tr ng-repeat="task in overdueList">
+      <td>{{task.name}}</td>
+      <td>{{task.dueDate | date }}</td>
+      <td>{{task.priority}}</td>
+ 
+</tr>
+</table>
+
+</div>
